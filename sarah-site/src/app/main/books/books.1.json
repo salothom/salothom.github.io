@@ -1,0 +1,32 @@
+{
+    "books":[
+        {"title": "Hard-Boiled Wonderland and the End of the World", "author":"Haruki Murakami", "year":"2017", "genre":"Speculative Fiction, Science Fiction", "number":"1", "selector":"Sarah Thompson"},
+        {"title": "The Killing Lessons", "author":"Saul Black", "year":"2017", "number":"2", "genre":"Murder Mystery", "selector":"Kassidy Hulen"},
+        {"title": "The 100-Year-Old Man Who Climbed out the Window and Disappeared", "author":"Jonas Jonasson", "year":"2017", "number":"3", "genre":"Adventure, Comedy Fiction", "selector":"Emily Hiler"},
+        {"title": "The Secret Agent", "author":"Joseph Conrad", "year":"2017", "number":"4", "genre":"Spy Fiction",  "selector":"Caleb Upson"},
+        {"title": "Boomerang", "author":"Michael Lewis", "year":"2017", "number":"5", "genre":"Non-Fictin, Finance Lit", "selector":"Luke Thomas"},
+        {"title": "Welcome to the Monkey House", "author":"Kurt Vonnugut", "year":"2018", "number":"6", "genre":"Short Stories, Comdey Fiction", "selector":"Sarah Thompson"},
+        {"title": "Modern Romance", "author":"Aziz Anzari", "year":"2018", "number":"7", "genre":"Non-Fiction", "selector":"Maggie Wolff"},
+        {"title": "Snowcrash", "author":"Neal Stephenson", "year":"2018", "number":"8", "genre":"Cyber Punk, Science Fiction", "selector":"Ben Sullivan"},
+        {"title": "Euphoria", "author":"Lily King", "year":"2018", "number":"9", "genre":"Historical Fiction", "selector":"Charmecia Morris"},
+        {"title": "Children of the New World", "author":"Alexander Weinstein", "year":"2018", "number":"10", "genre":"Short Stories, Science Fiction", "selector":"David Garcia"},
+        {"title": "What If?: Serious Scientific Answers to Absurd Hypothetical Questions.", "author":"Randall Munroe", "year":"2018", "number":"11", "genre":"Non-Fiction, Comedic Essays", "selector":"Tim Cavell"},
+        {"title": "Childhood's End", "author":"Arthur C. Clarke", "year":"2018", "number":"12", "genre":"Science Fiction", "selector":"Tyler Wiethorn"},
+        {"title": "Eleanor Oliphant is Completely Fine", "author":"Gail Honeyman", "year":"2018", "number":"13", "genre":"Contemporary Romance", "selector":"Emily Hiler"},
+        {"title": "Give Me Your Hand", "author":"Megan Abbott", "year":"2018", "number":"14", "genre":"Psychological Thriller", "selector":"Maggie Wolff"},
+        {"title": "The Alice Network", "author":"Kate Quinn", "year":"2018", "number":"15", "genre":"Spy Fiction", "selector":"Sarah Parzyck"},
+        {"title": "Fir Tree", "author":"Hans Christian Andersen", "year":"2018", "number":"16", "genre":"Short Story, Holiday", "selector":"Tim Cavell"},
+        {"title": "The Curse of Bigness", "author":"Tim Wu", "year":"2019", "number":"17", "genre":"Non-Fiction, Technology", "selector":"Ben Sullivan"},
+        {"title": "The Last Girlfriend on Earth", "author":"Simon Rich", "year":"2019", "number":"18", "genre":"Short Stories, Comedy", "selector":"Caleb Upson"},
+        {"title": "Devil in the White City", "author":"Erik Larson", "year":"2019", "number":"19", "genre":"Biography, True Crime", "selector":"Sarah Thompson"},
+        {"title": "Belgarath the Sorcerer", "author":"David Eddings", "year":"2019", "number":"20", "genre":"Fantasy", "selector":"Hayley Buffkin"},
+        {"title": "Something in the Water", "author":"Catherine Steadman", "year":"2019", "number":"21", "genre":"Psychological Thriller", "selector":"Maggie Wolff"},
+        {"title": "Little Fires Everywhere", "author":"Celeste Ng", "year":"2019", "number":"22", "genre":"Domestic Fiction", "selector":"Allison Cleere"},
+        {"title": "Order of Time", "author":"Carlo Rovelli", "year":"2019", "number":"23", "genre":"Non-Fiction, Science", "selector":"Charles B"},
+        {"title": "American Spy", "author":"Lauren Wilkinson", "year":"2019", "number":"24", "genre":"Spy Fiction", "selector":"Cody Bowlay"},
+        {"title": "City & the City", "author":"China Miéville", "year":"2019", "number":"25", "genre":"Mystery, Science Fiction", "selector":"Sarah Thompson"},
+        {"title": "The Secrets We Kept", "author":"LAra Prescott", "year":"2019", "number":"26", "genre":"Spy fition, historical fiction", "selector":"Maggie Wolff"},
+        {"title": "Walking Through Anger: A New Design for Conforonting Conflict in an emotionally Charged World", "author":"Christian Conte", "year":"2019", "number":"27", "genre":"Self Improvment", "selector":"Caleb Upson"}
+        
+    ]
+}
