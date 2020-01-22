@@ -1,0 +1,45 @@
+ 
+ body {
+    background-color: lightgoldenrodyellow;
+    margin: 45px;
+    font-family: sans-serif;
+    color: #404040;
+ }
+
+ ul {
+     width: 50%;
+     list-style-type: circle;
+     text-align: left;
+ }
+
+ li {
+    margin-left:  unset;  
+    margin-right: unset;
+    margin-bottom: unset;
+    background-color: lightgoldenrodyellow;
+    margin: 8px;
+    padding:3px;
+ }
+
+ li:hover {
+    list-style-type: disc;
+    color: #0e0d0d;
+ }
+
+ @media only screen and (max-width: 600px) {
+    ul {
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        list-style-type:none;
+    }
+
+    li {
+        background-color: lightgray;
+        padding: 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 25px;
+    }
+
+ }
