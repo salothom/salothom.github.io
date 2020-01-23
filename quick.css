@@ -12,6 +12,21 @@
      text-align: left;
  }
 
+ a {
+    text-decoration: none;
+    color: #404040;
+
+ }
+
+ a:visited{
+   color: #404040;
+ }
+
+ a:hover {
+   color: #0e0d0d;
+
+ }
+
  li {
     margin-left:  unset;  
     margin-right: unset;
