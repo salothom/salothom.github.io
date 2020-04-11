@@ -4,6 +4,8 @@
    margin:0px;
    font-size: 14pt;
    background: #55828B;
+   scroll-behavior: smooth; 
+   overflow-y: scroll;
 
  }
 .logo{
@@ -20,22 +22,45 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.g-logo{
+  /* line-height: 150px; */
+  text-align: center;
+  float: left;
+  
+  position: fixed;
+  height: 50px;
+  border: 1px solid black;
+  width:50px;
+  margin: 15px;
+  border-radius: 50%;
+  background: goldenrod;
+  color: black;
+  display: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
 .greyInside{
   padding: 8px
 }
  .greyMain{
   border: 1px solid black;
 
-   width: 70%;
+  
    /* clip-path: polygon(0% 0%, 0% 85%, 100% 100%, 100% 15%); */
-   margin-top:60px;
-   margin-bottom:60px;
-   margin-left:25%;
+   margin-top:200px;
+   margin-bottom:200px;
+
    padding: 55px 15px 55px 15px;
    background: gray;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    display: block;
-   float: left;
+ }
+ .main{
+    width: 70%;  
+    display: block;
+    margin-left:25%;
+    float: left; 
  }
 
  a {
@@ -64,88 +89,71 @@
    text-decoration: underline;
  }
  
- 
-/* 
- $darkblue: #152c3e;
-$lightblue: #37618a;
-$greenprimary: #879759;
-$greenshadow: #648459; */
 
-/* * { margin: 0; padding: 0; } */
+.clouds{
+  position: fixed;
+  z-index: -7;
+}
+.cloud1{
+  margin-left: 10%;bottom: -40%;
 
+}
+.cloud2{
+  margin-left: 60%;bottom: -70%;
+}
+.cloud3{
+ margin-left: 30%;bottom: 40%;
+}
+.cloud4{
+  margin-left: 40%; bottom: -40%;
+}
+.cloud5{
+  margin-left: 70%; bottom: -40%;
+}
+.cloud6{
+  margin-left: 25%; bottom: -40%;
+}
+.cloud7{
+  margin-left: 60%; bottom: -40%;
+}
+.cloud8{
+  margin-left: 10%; bottom: -40%;
+}
 
-body {
-    min-height: 100%;
-    background: -webkit-linear-gradient(top, $darkblue, $lightblue);
-    position: relative;
-
-    #mountains {
-        z-index: 2;
-        position: absolute;
-        bottom: 20%;
-        margin-bottom: -16px;
-        left: 10%;
-    }
-
-    #cloud1 {
-        z-index: 2;
-        position: absolute;
-        top: 20%;
-        right: 4%;
-        animation: bounce 2s ease-in-out 0s infinite alternate;
-    }
-
-    #cloud2 {
-        z-index: 1;
-        position: absolute;
-        top: 22%;
-        right: 16%;
-        animation: bounce 3.5s ease-in-out 2s infinite alternate;
-    }
-
-    .trees {
-        width: 100%;
-        height: 130px;
-        z-index: 4;
-        position: absolute;
-        bottom: 20%;
-        margin-bottom: -100px;
-    }
-
-    #ground {
-        z-index: 1;
-        width: 100%;
-        height: 20%;
-        position: absolute;
-        bottom: 0;
-        background: $greenprimary;
-    }
-
-    #hills {
-        // background: rgba(255,0,0,0.3);
-        position: absolute;
-        left: 10%;
-        margin-left: -120px;
-        margin-bottom: -86px;
-        bottom: 20%;
-        z-index: 3;
-    }
-
-    #stars {
-        width: 100%;
-        height: 100%;
-    }
+.mountain{
+  bottom: 0;z-index: -6; position: fixed; 
+  margin-left: unset;
 }
 
 
-
-
-
-
-
  @media only screen and (max-width: 800px) {
-   .greyMain{display: none;}
-   .golden{
+   .golden{display: none;}
+   .greyMain{
       width: 100%;
+      /* margin-top:80px;
+      margin-bottom:80px; */
+
    }
+   .main{
+    width: 100%; 
+    display: block;
+    margin-left:0%;
+  }  
+  body{
+    /* font-size: 20pt; */
+  }
+  .g-logo{
+    display: block;
+    text-align: center;
+  }
+  .mountain{
+    margin-left: -40px;
+
+  }
+
+ a:hover {
+  /* color: #0e0d0d; */
+  text-decoration: none;
+}
+
  }
