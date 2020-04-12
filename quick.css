@@ -9,6 +9,15 @@
    font-family: sans-serif; font-size: 16px; font-style: normal;
 
  }
+ .circle{
+
+ float: left;
+    width: 10px;
+    height: 10px;
+    background: #3b1642;
+    border-radius: 50%
+  
+ }
 .logo{
    line-height: 150px;
    border: 1px solid black;
@@ -49,10 +58,8 @@
 margin-top:15%;
   position: fixed;
   z-index: -6;
-width:100%;
+width:100vw;
   text-align: center;
-    /* padding: 40px; */
-    /* margin: 240px 30px 240px 30px; */
     height: 100vh;
     font-size: 30pt;
     font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -64,6 +71,8 @@ width:100%;
   position: relative;
   z-index: 2;
   width:100%;
+  position: relative;
+
   text-align: center;
   font-size: 30pt;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -77,8 +86,8 @@ width:100%;
 
   z-index: 4;
    /* clip-path: polygon(0% 0%, 0% 85%, 100% 100%, 100% 15%); */
-   margin-top:50px;
-   margin-bottom:50px;
+   /* margin-top:50px;
+   margin-bottom:50px; */
   position: relative;
    padding: 15px;
    background: gray;
@@ -90,13 +99,15 @@ width:100%;
     display: block;
     /* margin-left:5%; */
     float: left; 
+    position: relative;
+    z-index: -8;
  }
 
  a {
     text-decoration: none;
     color: #3b1642;
  }
-
+ 
  .golden{
    text-align: center;   width: 30%;
    height: 100vh;
@@ -111,12 +122,7 @@ a:hover {
    /* color: #0e0d0d; */
    text-decoration: underline;
  }
- 
- /* a:visited{
-   color: #404040;
- } */
 
- 
 
 .clouds{
   position: fixed;
@@ -207,8 +213,12 @@ display: block;
   }
 
   .hero{
-    margin: 180px 0px 300px 0px;
+    margin-top:45%;
     font-size: 27pt;
+  }
+  .hero2{
+    font-size: 27pt;
+
   }
 
  a:hover {
