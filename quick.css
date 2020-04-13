@@ -3,11 +3,18 @@
    /* font-variant-caps: petite-caps; */
    margin:0px;
    /* font-size: 12pt; */
-   background: #55828B;
-   scroll-behavior: smooth; 
+   background: linear-gradient(to bottom,#55828B 18%, black 50%, #55828B 16%);
+  /* scroll-behavior: smooth;  */
    overflow-y: scroll;
-   font-family: sans-serif; font-size: 16px; font-style: normal;
+   font-family: sans-serif; 
+   font-size: 16px; 
+   font-style: normal;
+   width: 100vw;
 
+ }
+ .bottomTime{
+  background: linear-gradient(to bottom,black 8%, #55828B 90%, goldenrod);
+  z-index: -7; padding-bottom: 300px
  }
  .circle{
 
@@ -35,21 +42,22 @@ dt {
   align-self: flex-start;
   display: block;
   margin-bottom: 20px;
-  margin-left: 60px;
+  margin-left: 69px;
 }
 
+.graphSkills{
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .text {
   text-align: left;
   float: left;
-  /* font-weight: 600; */
   display: flex;
-  /* align-items: center; */
-  height: 40px;
-  width: 60px;
-  /* background-color: white; */
+  height: 90px;
+  width: 100px;
   position: absolute;
   left: 0;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 
 .percentage {
@@ -58,11 +66,11 @@ dt {
   text-transform: uppercase;
   width: 80%;
   height: 40px;
-  margin-left: 60px;
+  margin-left: 100px;
   background: repeating-linear-gradient(
   to right,
   transparent,
-  #ddd 1px,
+  #55828B 1px,
   transparent 1px,
   transparent 10%
 )};
@@ -73,31 +81,19 @@ dt {
   background:#3b1642;
 }
 
-/* .percentage::after {
-  content: "";
-  display: block;
-  background-color: #3d9970;
-  width: 50px;
-  margin-bottom: 10px;
-  height: 90%;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: background-color .3s ease;
-  cursor: pointer;
-} */
+
 
 .logo{
-   line-height: 150px;
-   border: 1px solid black;
+  line-height: 150px;
+  border: 1px solid black;
 
-        width:150px;
-        margin: auto;
-        margin-top: 15px;
-        border-radius: 50%;
-        background: gray;
-        color: black;
-        display: block;
+  width:150px;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 50%;
+  background: gray;
+  color: black;
+  display: block;
         /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
@@ -124,14 +120,14 @@ dt {
   /* color: #632242; */
   /* color:#5d2042; */
   vertical-align: middle;
-margin-top:15%;
+  margin-top:15%;
   position: fixed;
   z-index: -6;
-width:100vw;
+  width:100vw;
   text-align: center;
-    height: 100vh;
-    font-size: 30pt;
-    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  height: 100vh;
+  font-size: 30pt;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
 }
 
 .hero2{
@@ -150,19 +146,34 @@ width:100vw;
 .greyInside{
   padding: 8px
 }
- .greyMain{
-  /* border: 1px solid black; */
 
+.mainBox{
   z-index: 4;
-   /* clip-path: polygon(0% 0%, 0% 85%, 100% 100%, 100% 15%); */
-   /* margin-top:50px;
-   margin-bottom:50px; */
   position: relative;
-   padding: 15px;
-   background: gray;
-   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-   display: block;
+  padding-top: 35px; 
+  padding-bottom: 35px; 
+
+  display: block;
+
+}
+.insideSection{
+  padding: 15px;
+}
+ .greyMain{
+  
+   background: lavender;
  }
+
+.purpleMain{
+  color:lavender; 
+  background: #3b1642;
+}
+.purpleMain a{
+  color: #55828B
+}
+
+
+
  .main{
     width: 100%;  
     display: block;
@@ -253,9 +264,13 @@ display: block;
    .golden{display: none;}
    .greyMain{
       width: 100%;
-      /* margin-top:80px;
-      margin-bottom:80px; */
+   }
+   .purpleMain{
+     width: 100%;
+   }
 
+   .percentage{
+    width: 40%;
    }
    .cloud9{
      margin-left:-15%;
@@ -264,8 +279,13 @@ display: block;
    .cloud10{
      display: none;
    }
+
+   .graphSkills{
+    margin-left: unset;
+    margin-right: unset;
+  }
    .main{
-    width: 100%; 
+    width: 105%; 
     display: block;
     margin-left:0%;
   }  
@@ -283,10 +303,10 @@ display: block;
 
   .hero{
     margin-top:45%;
-    font-size: 27pt;
+    font-size: 22pt;
   }
   .hero2{
-    font-size: 27pt;
+    font-size: 22pt;
 
   }
 
