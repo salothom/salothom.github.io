@@ -152,6 +152,8 @@ dt {
   position: relative;
   padding-top: 35px; 
   padding-bottom: 35px; 
+  padding-right: 0px;
+  padding-bottom: 0px;
 
   display: block;
 
@@ -259,18 +261,29 @@ display: block;
 
 }
 
+.arrow{
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%; 
+  display:block;
+  text-align: center;     
+  position: fixed;
+  top: 60%;  
+  z-index: 0;
+}
+
 
  @media only screen and (max-width: 800px) {
    .golden{display: none;}
    .greyMain{
-      width: 100%;
+      width: unset;
    }
    .purpleMain{
-     width: 100%;
+     width: unset;
    }
 
    .percentage{
-    width: 40%;
+    width: 60%;
    }
    .cloud9{
      margin-left:-15%;
@@ -280,12 +293,16 @@ display: block;
      display: none;
    }
 
+   .mainBox{
+    padding-right: 30px;
+    padding-bottom: 30px;
+   }
    .graphSkills{
-    margin-left: unset;
+    /* margin-left: unset; */
     margin-right: unset;
   }
    .main{
-    width: 105%; 
+    width: unset; 
     display: block;
     margin-left:0%;
   }  
@@ -304,9 +321,12 @@ display: block;
   .hero{
     margin-top:45%;
     font-size: 22pt;
+    width: unset
+
   }
   .hero2{
     font-size: 22pt;
+    width: unset
 
   }
 
