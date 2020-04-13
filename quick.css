@@ -48,7 +48,16 @@ dt {
 .graphSkills{
   margin-left: 10%;
   margin-right: 10%;
+  padding-bottom: 30px;
 }
+
+.craftBox{
+  position: relative;
+  /* text-align: right; */
+  float: left;
+  width: 50%;
+}
+
 .text {
   text-align: left;
   float: left;
@@ -154,7 +163,6 @@ dt {
   padding-bottom: 35px; 
   padding-right: 0px;
   padding-bottom: 0px;
-
   display: block;
 
 }
@@ -334,5 +342,9 @@ display: block;
   /* color: #0e0d0d; */
   text-decoration: none;
 }
-
+.craftBox{
+  /* position: relative;
+  float: left; */
+  width: 100%;
+}
  }
