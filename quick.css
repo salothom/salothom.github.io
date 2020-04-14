@@ -279,7 +279,9 @@ display: block;
   top: 60%;  
   z-index: 0;
 }
-
+.mountainB{
+  display: none;
+}
 
  @media only screen and (max-width: 800px) {
    .golden{display: none;}
@@ -322,8 +324,12 @@ display: block;
     text-align: center;
   }
   .mountain{
+    display: none;
     margin-left: -40px;
 
+  }
+  .mountainB{
+    display: block;
   }
 
   .hero{
