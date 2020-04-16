@@ -167,7 +167,8 @@ dt {
 
 }
 .insideSection{
-  padding: 15px;
+  padding: 35px;
+
 }
  .greyMain{
   
@@ -284,6 +285,9 @@ display: block;
 }
 
  @media only screen and (max-width: 800px) {
+   .insideSection{
+  padding-right: 10px;
+}
    .golden{display: none;}
    .greyMain{
       width: unset;
