@@ -284,10 +284,19 @@ display: block;
   display: none;
 }
 
+.pics6{
+width: 15%;
+}
+
  @media only screen and (max-width: 800px) {
    .insideSection{
-  padding-right: 10px;
-}
+     padding-right: 10px;
+  }
+
+  .pics6{
+    width: 29%;
+  }
+
    .golden{display: none;}
    .greyMain{
       width: unset;
