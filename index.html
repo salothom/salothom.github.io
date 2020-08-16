@@ -15,25 +15,32 @@
     <script>
         window.onscroll = function (ev) {
             let percent = ((window.innerHeight + window.scrollY) / document.body.scrollHeight);
-            if (percent > .5) {
+            console.log(percent);
+            if (percent > .27) {
                 document.getElementById('arrow').style.display = "none";
-
             } else {
                 document.getElementById('arrow').style.display = "block";
+            }
+
+            if (percent > .32) {
+                document.getElementById('hero').style.display = "none";
+            } else {
+                document.getElementById('hero').style.display = "block";
+            }
+
+                document.getElementById('mountain').style.bottom = (-350 + (1000 * (percent - .7))) + "px"
+                document.getElementById('cloud1').style.bottom = -10 + (160 * percent) + "%";
+                document.getElementById('cloud2').style.bottom = -55 + (290 * percent) + "%";
+                document.getElementById('cloud3').style.bottom = -10 + (280 * percent) + "%";
+                document.getElementById('cloud4').style.bottom = -85 + (260 * percent) + "%";
+                document.getElementById('cloud5').style.bottom = -200 + (220 * percent) + "%";
+                document.getElementById('cloud6').style.bottom = -240 + (290 * percent) + "%";
+                document.getElementById('cloud7').style.bottom = -120 + (200 * percent) + "%";
+                document.getElementById('cloud8').style.bottom = -120 + (215 * percent) + "%";
+                document.getElementById('cloud9').style.bottom = -90 + (315 * percent) + "%";
+                document.getElementById('cloud10').style.bottom = -30 + (155 * percent) + "%";
 
             }
-            document.getElementById('mountain').style.bottom = (-350 + (1000 * (percent - .7))) + "px"
-            document.getElementById('cloud1').style.bottom = -10 + (160 * percent) + "%";
-            document.getElementById('cloud2').style.bottom = -55 + (290 * percent) + "%";
-            document.getElementById('cloud3').style.bottom = -10 + (280 * percent) + "%";
-            document.getElementById('cloud4').style.bottom = -85 + (260 * percent) + "%";
-            document.getElementById('cloud5').style.bottom = -200 + (220 * percent) + "%";
-            document.getElementById('cloud6').style.bottom = -240 + (290 * percent) + "%";
-            document.getElementById('cloud7').style.bottom = -120 + (200 * percent) + "%";
-            document.getElementById('cloud8').style.bottom = -120 + (215 * percent) + "%";
-            document.getElementById('cloud9').style.bottom = -90 + (315 * percent) + "%";
-            document.getElementById('cloud10').style.bottom = -30 + (155 * percent) + "%";
-        }
 
     </script>
     <div class="main">
@@ -97,63 +104,92 @@
 
         </div>
         <div class="bottomTime">
-            <section id="about" style="margin-top:1020px" class="mainBox greyMain">
+            <section id="about" style="margin-top:1020px;" class="mainBox  starterBox mainLeft greyMain">
                 <div class="insideSection">
                     <div>
-                        <h3>About</h3>
+                        <h3>Hey!</h3>
                     </div>
-                    <p>Hi! </p>
                     <p> My name is Sarah and am a software developer based in Austin, Texas.</p>
-                    <p>Originally from the Chicago suburbs, I love Italian Beefs and prefer to be too than than too hot.
-                    </p>
-                    <p>I gradutated from Indiana Univeristy in 2016 with a degree in Informatics from the School of
-                        Informatics and Computer Science. At IU I worked at their award winning student radio station
-                        WIUX and was an undergraduate instructor for an Intro to Python course.</p>
                     <p>
-                        After graduating I moved down to the Lone Star State, and now I spend most of my free time
-                        trying to learn new tech skills, crafting, captaining a city league kickball team, and
-                        faciliting the book club I founded.
                     </p>
+
                 </div>
 
             </section>
-            <section id="projects" class="mainBox purpleMain">
+       
+            <section id="projects" class="mainBox mainRight purpleMain">
                 <div class="insideSection">
                     <div>
                         <h3>Projects</h3>
                     </div>
                     <div>
-                        <a class="winkLink" target="_blank" href="http://sarahloisthompson.com/home/">Book Club and
-                            Music New Years
-                            Resolution</a>
-                        <p>I made this site to keep track of the books that the book club I founded has read, for ease
-                            of
-                            access and reference when ever we meet and select a new book. It is also used to keep track
-                            of
-                            my 2020 new years resolution to listen to 100 albums with "fresh ears".
-                            This site is written in Angular 7, and hosted via github pages. All of the book and album
-                            data
-                            is stored in a json. </p>
+                        <div class="craftBox">
+                            <a class="winkLink" target="_blank" href="http://sarahloisthompson.com/home/">Book Club and
+                                Music New Years
+                                Resolution</a>
+                            <p>I made this site to keep track of the books that the book club I founded has read, for
+                                ease
+                                of
+                                access and reference when ever we meet and select a new book. It is also used to keep
+                                track
+                                of
+                                my 2020 new years resolution to listen to 100 albums with "fresh ears".
+                                This site is written in Angular 7, and hosted via github pages. All of the book and
+                                album
+                                data
+                                is stored in a json. </p>
+                        </div>
+                        <div class="craftBox">
+
+                        </div> <img style="padding: 3px" class="pic1" src="craft/club.jpg" />
+
                     </div>
+                </div>
+            </section>
+            <section id="" class="mainBox mainleft greyMain">
+                <div class="insideSection">
                     <div>
-                        <a class="winkLink" target="_blank" href="http://sarahloisthompson.com/react-site/">Home
-                            Library</a>
-                        <p> I made this site at the beginning of the 2020 quarantine to list and virtually present all
-                            of
-                            the books that I have. I did this because 1) I thought it'd be cool* to have and 2) there is
-                            so
-                            much free time when you're not allowed to do anything. This site is made using react, and
-                            the
-                            data is held in a json.</p>
-                        <p style="text-align: right">*cool is very subjective</p>
+                        <div class="craftBox">
+                        </div> <img style="padding: 3px" class="pic1" src="craft/library.jpg" />
+
+                        <div class="craftBox">
+
+                            <a class="winkLink" target="_blank" href="http://sarahloisthompson.com/react-site/">Home
+                                Library</a>
+                            <p> I made this site at the beginning of the 2020 quarantine to list and virtually present
+                                all
+                                of
+                                the books that I have. I did this because
+                                there is
+                                so
+                                much free time when you're not allowed to do anything. This site is made using react,
+                                and
+                                the
+                                data is held in a json.</p>
+                            <p style="text-align: right">*cool is very subjective</p>
+                        </div>
                     </div>
+                    </br>
+                </div>
+            </section>
+
+            <section id="" class="mainBox mainRight purpleMain">
+                <div class="insideSection">
                     <div>
-                        <a class="winkLink" target="_blank" href="http://sarahloisthompson.com/dungon">Random Genre
-                            Generator</a>
-                        <p>I broke down the linguist components of traditional genres and assigned them booleans of if
-                            the could be a base genre, prefix of suffix. For example "core" is only a suffix, but
-                            "indie" is both stand alone and a prefix. This is made with react and the data is held in a
-                            json</p>
+                        <div class="craftBox">
+
+                            <a class="winkLink" target="_blank" href="http://sarahloisthompson.com/dungon">Random Genre
+                                Generator</a>
+                            <p>I broke down the linguist components of traditional genres and assigned them booleans of
+                                if
+                                the could be a base genre, prefix of suffix. For example "core" is only a suffix, but
+                                "indie" is both stand alone and a prefix. This is made with react and the data is held
+                                in a
+                                json</p>
+                        </div>
+                        <div class="craftBox">
+                        </div> <img style="padding: 3px" class="pic1" src="craft/genre.jpg" />
+
                     </div>
                     <div style="text-align: right; padding-top: 50px;">
                         <p>All SVGs on this site I made with the online program <a target="_blank" class="winkLink"
@@ -238,39 +274,35 @@
 
 
             </section>
-            <section id="crafts" class="mainBox purpleMain">
+            <section id="crafts" class="mainBox mainRight purpleMain">
                 <div class="insideSection">
                     <div>
                         <div>
                             <h3>Crafts</h3>
                         </div>
                         <div>
-                            <p>I like to create things with my hands. It is satisfying and feels
-                                incredibly productive - even if all I'm doing is embroidering a succulent to give to a
-                                friend. It gives something for my hands to do besides endlessly scrolling social media
-                                while streaming tv. </p>
+                            <p>When I'm not coding, sometimes I like to make things from scratch, digitally, amd/or with
+                                my hands.</p>
 
 
                         </div>
                         <img style="padding: 3px" class="pics6" src="craft/cac.jpg" />
                         <img style="padding: 3px" class="pics6" src="craft/nood.jpg" />
                         <img style="padding: 3px" class="pics6" src="craft/drink.jpg" />
+
                         <!-- <img style="width: 22%;padding: 3px" src="machine.png" /> -->
 
                         <img style="padding: 3px" class="pics6" src="craft/bread.jpeg" />
                         <img style="padding: 3px" class="pics6" src="craft/deer.jpg" />
-                        <img style="padding: 3px" class="pics6" src="craft/roll.jpg" />
+                        <img style="padding: 3px" class="pics6" src="craft/sew.png" />
+                        <img style="padding: 3px" class="pics6" src="craft/paint.jpeg" />
 
-                        <p>My main crafts right now are embroidery, cooking/baking, sewing, and drawing. For cooking
-                            I had a loose 2020 goal of learning to cook something new and interesting every
-                            month or so from scratch. So far my favorite successes are - sourdough bread, classic
-                            margaritas, egg noodles, & earl grey tea cake.</p>
+                        <img style="padding: 3px" class="pics6" src="craft/cubs.jpeg" />
+
 
 
                     </div>
-                    <!-- <div style="text-align: right; " class="craftBox">
-                        <img style="width: 70%" src="machine.png" />
-                    </div> -->
+
                     <p style="color: #3b1642">.</p>
 
                 </div>
@@ -293,6 +325,9 @@
 
                         <div>Email: SarahLoisThompson [at] gmail.com</div>
                         <div>On <a class="winkLink" target="_blank" href="https://github.com/salothom">Github</a></div>
+
+                        <div>On <a target="_blank" href="https://dev.to/salothom">Dev.to</a>
+                        </div>
                         <div>On <a target="_blank"
                                 href="https://open.spotify.com/user/1242326189?si=nvhZn5nAQHaD48_Rt6bvGg">Spotify</a>
                         </div>
@@ -306,14 +341,14 @@
                     <h1>Sarah Lois Thompson</h1>
                 </div>
             </div>
-            <div id="mountainB" style="  overflow: hidden;  width: 100%;bottom: 0; position: absolute;" class="mountainB">
+            <div id="mountainB" style="  overflow: hidden;  width: 100%;bottom: 0; position: absolute;"
+                class="mountainB">
                 <img src="mountain.svg" style="width:initial;    margin-left: -60px;
                     margin-bottom: -20px;" alt="cute mountains">
 
             </div>
         </div>
 
-    </div>
 
     </div>
 </body>

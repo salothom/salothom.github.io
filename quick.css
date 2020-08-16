@@ -3,7 +3,7 @@
    /* font-variant-caps: petite-caps; */
    margin:0px;
    /* font-size: 12pt; */
-   background: linear-gradient(to bottom,#55828B 18%, black 50%, #55828B 16%);
+   background: linear-gradient(to bottom, #55828B 90%,goldenrod);
   /* scroll-behavior: smooth;  */
    overflow-y: scroll;
    font-family: sans-serif; 
@@ -13,9 +13,15 @@
 
  }
  .bottomTime{
-  background: linear-gradient(to bottom,black 8%, #55828B 90%, goldenrod);
+  background: linear-gradient(to bottom, #55828B 90%, goldenrod);;
+  z-index: -7; 
+  padding-bottom: 300px
+ }
+ .bottomTime2{
+  background: linear-gradient(to bottom, #55828B 95%, goldenrod);
   z-index: -7; padding-bottom: 300px
  }
+
  .circle{
 
  float: left;
@@ -55,7 +61,13 @@ dt {
   position: relative;
   /* text-align: right; */
   float: left;
-  width: 50%;
+  width: 60%;
+  /* height: 300px; */
+}
+.craftBox a{ 
+  padding:5px;
+  margin:3px;
+  padding-top: 20px;
 }
 
 .text {
@@ -140,13 +152,11 @@ dt {
 }
 
 .hero2{
-  margin-top:50%;
+  margin-top:35%;
   color: #3b1642;
   position: relative;
   z-index: 2;
   width:100%;
-  position: relative;
-
   text-align: center;
   font-size: 30pt;
   font-family: Copperplate, "Copperplate Gothic Light", fantasy;
@@ -160,6 +170,7 @@ dt {
   z-index: 4;
   position: relative;
   padding-top: 35px; 
+  width: 70%;
   padding-bottom: 35px; 
   padding-right: 0px;
   padding-bottom: 0px;
@@ -168,6 +179,7 @@ dt {
 }
 .insideSection{
   padding: 35px;
+  margin-bottom: 20px;
 
 }
  .greyMain{
@@ -283,14 +295,32 @@ display: block;
 .mountainB{
   display: none;
 }
+.pic1{
+  width: 35%;
+}
+.mainRight{
+margin-left:30%}
+.mainLeft{
+  /* float: left; */
+}
 
 .pics6{
 width: 15%;
 }
 
+.starterBox{
+  margin-left:10%;
+  width:77%;
+}
+
  @media only screen and (max-width: 800px) {
    .insideSection{
      padding-right: 10px;
+     margin-bottom: unset;
+  }
+  .starterBox{
+    margin-left:unset;
+    width:100%;
   }
 
   .pics6{
@@ -298,6 +328,7 @@ width: 15%;
   }
 
    .golden{display: none;}
+
    .greyMain{
       width: unset;
    }
@@ -317,12 +348,17 @@ width: 15%;
    }
 
    .mainBox{
+     width: 100%;
     padding-right: 30px;
     padding-bottom: 30px;
    }
    .graphSkills{
     /* margin-left: unset; */
     margin-right: unset;
+  }
+  .mainRight{
+    margin-left:unset
+
   }
    .main{
     width: unset; 
