@@ -13,7 +13,7 @@
 
  }
  .bottomTime{
-  background: linear-gradient(to bottom, #55828B 90%, goldenrod);;
+  /* background: linear-gradient(to bottom, #55828B 90%, goldenrod);; */
   z-index: -7; 
   padding-bottom: 300px
  }
@@ -169,6 +169,7 @@ dt {
   z-index: 4;
   position: relative;
   padding-top: 35px; 
+  margin-top: 15px;
   width: 70%;
   padding-bottom: 35px; 
   padding-right: 0px;
@@ -298,9 +299,10 @@ display: block;
   width: 35%;
 }
 .mainRight{
-margin-left:30%}
-.mainLeft{
-  /* float: left; */
+margin-left:25%
+}
+.mainleft{
+  margin-left:5%;
 }
 
 .pics6{
@@ -358,6 +360,9 @@ width: 15%;
   .mainRight{
     margin-left:unset
 
+  }
+  .mainLeft{
+    margin-left:unset;
   }
    .main{
     width: unset; 
