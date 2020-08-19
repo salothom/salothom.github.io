@@ -361,7 +361,7 @@ width: 15%;
     margin-left:unset
 
   }
-  .mainLeft{
+  .mainleft{
     margin-left:unset;
   }
    .main{
@@ -402,8 +402,8 @@ width: 15%;
   text-decoration: none;
 }
 .craftBox{
-  /* position: relative;
-  float: left; */
+  /* position: relative;*/
+  float: unset; 
   width: 100%;
 }
  }
