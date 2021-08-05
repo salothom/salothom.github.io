@@ -1,23 +1,23 @@
 :root {
   /** sunny side **/
-  --light-background: #B87E54;
-  --light-olive: #4D4828;
-  --light-blue: #99C1C3;
-  --light-purple: #67597A;
-  --light-yellow: #E0CD7E;
+  --light-background: #b87e54;
+  --light-olive: #4d4828;
+  --light-blue: #99c1c3;
+  --light-purple: #67597a;
+  --light-yellow: #e0cd7e;
   /** dark side **/
   --dark-background: #283618;
   --dark-darkblue: #001d3d;
   --dark-blue: #003566;
   --dark-darkestblue: #000814;
-  --dark-mustard: #664E00;
-    /** sunny side **/
+  --dark-mustard: #664e00;
+  /** sunny side **/
 
   --blue-background: #c2e9f6;
   --blue-border: rgb(106, 185, 189);
-  --blue-color: #99C1C3;
+  --blue-color: #99c1c3;
   --yellow-background: rgb(224, 217, 126);
-  --yellow-border: #E0CD7E;
+  --yellow-border: #e0cd7e;
   /** dark side **/
   --indigo-background: #808fc7;
   --indigo-border: #001d3d;
@@ -28,28 +28,119 @@
   --white: rgb(248, 248, 245);
 }
 
-
-.toggle--checkbox:checked ~ .head{
-  background-color: var(--dark-background); 
+.toggle--checkbox:checked ~ .head {
+  background-color: var(--dark-background);
   color: var(--white);
 }
-.toggle--checkbox:checked ~ .head .header{
+.toggle--checkbox:checked ~ .head .header {
   background-color: var(--dark-darkestblue);
+}
+.toggle--checkbox:checked ~ .head .headshot {
+  border: 2px solid var(--dark-darkestblue);
+}
+.toggle--checkbox:checked ~ .head .sun {
+display: none}
+.toggle--checkbox:checked ~ .head .moon {
+display: block}
+
+
+.toggle--checkbox:checked ~ .head .yellowSwap {
+  background-color: var(--dark-darkestblue);
+}
+.toggle--checkbox:checked ~ .head .mainContent .sections .bar {
+  background: var(--dark-blue)
+}
+
+.toggle--checkbox:checked ~ .bodier .bar {
+  background-color: #001d3d;
+}
+
+.toggle--checkbox:checked ~ .bodier {
+  background-color: var(--dark-background);
+}
+.sun{
+  display: block;
+  transition: all 250ms ease-in;
 
 }
-.toggle--checkbox:checked ~ .head .headshot{
+.moon{
+  display: none;
+  transition: all 250ms ease-in;
+
+}
+.toggle--checkbox:checked
+  ~ .head
+  .headershot
+  .facematch
+  .contact-group
+  .contact-links {
   border: 2px solid var(--dark-darkestblue);
 }
 
-.toggle--checkbox:checked ~ .bodier{
-  background-color: var(--dark-background); 
+.toggle--checkbox:checked
+  ~ .head
+  .headershot
+  .facematch
+  .contact-group
+  a:hover {
+  border-bottom: 1px solid var(--dark-darkestblue);
+}
+.toggle--checkbox:checked ~ .head .headershot .facematch .contact-group a {
+  border-bottom: 0px solid var(--dark-darkestblue);
 }
 
-.mosthigh{
-z-index: 20;
-position: fixed;
-top: 195px;
-    left: 30px;
+.mainContent {
+  width: 55%;
+  margin-left: 45%;
+  margin-bottom: 50%;
+  margin-top: 100px;
+  display: flex;
+  height: 80%;
+}
+
+.mainButtons {
+  min-width: 120px;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 12px;
+  padding: 5px;
+  text-decoration: none;
+}
+.buttons:hover {
+  text-decoration: underline;
+}
+.portolfio{
+  display:none;
+}
+.skills{
+  display: none;
+
+}
+.about{
+  display: block;
+}
+
+.sections {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-right: 15px;
+  width: 100%;
+
+}
+
+.mosthigh {
+  top: 490px;
+  left: 210px;
+  bottom: 30%;
+  position: absolute;
+  z-index: 5;
 }
 
 body {
@@ -59,57 +150,79 @@ body {
 }
 h2 {
   margin-top: 50px;
-  text-align: center;
+  margin-bottom: 15px;
 
+  text-align: center;
+}
+.facematch {
+  width: 500px;
+  z-index: 5;
+  left: 100px;
+  top: 200px;
+  bottom: 30%;
+  position: absolute;
 }
 .headshot {
   border-radius: 50%;
   width: 300px;
   z-index: 5;
-  bottom: 65px;
-  margin:auto;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  border:2px solid var(--light-yellow);
-  margin-bottom: -55px;
+  left: 10%;
+  top: 20%;
+  bottom: 25%;
+  border: 2px solid var(--light-yellow);
 }
-.headershot{
+.headershot {
   width: 100%;
-    justify-content: center;
-    display: flex;
-
+  justify-content: center;
+  display: flex;
 }
+
 .head {
   transition: all 250ms ease-in;
-  height: 250px;
+  height: 100%;
   position: fixed;
   width: 100%;
   top: 0px;
+  left: 0px;
+  right: 0px;
   background-color: var(--light-background);
-  color: var(--light-olive);
+  color: black;
 }
-.header {
+
+.yellowSwap {
+  background-color: var(--light-yellow);
+}
+.headerTop {
   width: 100%;
   position: absolute;
-  bottom: 0px;
-  background-color: var(--light-yellow);
+  top: 0px;
   height: 60px;
   float: left;
   align-items: center;
   display: flex;
 }
+.headerBottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 60px;
+  float: left;
+  align-items: center;
+  display: flex;
+}
+
 .header-width {
   width: 50%;
 }
 .bodier {
   transition: all 250ms ease-in;
-  /* margin-top: 250px; */
+  margin-top: 250px;
   background-color: var(--light-background);
-
 }
-
-.introgroup{
+.hide {
+  opacity: 0%;
+}
+.introgroup {
   width: 50%;
   padding: 45px;
 
@@ -117,40 +230,39 @@ h2 {
 }
 .contact-group {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-top: 75px;
 }
 
-.contact-group a{
-  padding: 20px;
-  /* height: 116px;
-  width: 116px; */
-  border-radius: 8%;
+.contact-group a {
+  margin: 15px;
+  border-bottom: 0px solid var(--light-yellow);
 }
-.contact-group a:hover{
-  padding: 20px;
-  background-color: var(--dark-darkestblue);
+
+.contact-group a:hover {
+  border-bottom: 1px solid var(--light-yellow);
   transition-duration: 1s;
 }
-.contact-group a p{
+.contact-group a p {
   margin-top: 0px;
-  color:whitesmoke;
+  color: whitesmoke;
 }
+
 .contact-links {
   width: 30px;
+  transition-duration: 1s;
   border-radius: 50%;
   background-color: white;
   padding: 2px;
-  border: 2px solid var(--dark-darkestblue);
+  margin: 2px;
+  border: 2px solid var(--light-yellow);
 }
-
 
 .parallax {
   /* The image used */
-  background-image: url("./photos/swing.jpg");
+  background-image: url("./photos/swingsman.png");
 
   /* Set a specific height */
-  min-height: 500px;
+  min-height: 300px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -158,7 +270,6 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 
 * {
   margin: 0;
@@ -186,6 +297,7 @@ body {
 .toggle--checkbox:checked ~ .background {
   background: var(--indigo-background);
 }
+
 .toggle--checkbox:checked + .toggle--label {
   background: var(--indigo-color);
   border-color: var(--indigo-border);
@@ -193,7 +305,7 @@ body {
   /** Change the sun into the moon **/
   /** Show the dimples on the moon **/
 }
-.toggle--checkbox:checked + .toggle--label .toggle--label-background {
+.toggle--checkbox:checked .toggle--label-background {
   left: 26px;
   width: 5px;
 }
@@ -220,7 +332,6 @@ body {
   opacity: 1;
 }
 .toggle--label {
-  /** Placeholder element, starting at blue **/
   width: 80px;
   height: 40px;
   background: var(--blue-color);
@@ -228,9 +339,6 @@ body {
   border: 5px solid var(--blue-border);
   display: flex;
   transition: all 350ms ease-in;
-  /** The sun cloud and moon stars **/
-  /** Sun/Moon element **/
-  /** Gray dots on the moon **/
 }
 .toggle--label-background {
   width: 10px;
@@ -294,6 +402,15 @@ body {
   opacity: 0;
 }
 
+.my-name {
+  padding: 7px;
+  /* width: 50%; */
+  transition: all 250ms ease-in;
+
+  font-family: fantasy;
+  font-variant: petite-caps;
+}
+
 @keyframes switch {
   0% {
     left: 4px;
@@ -320,3 +437,40 @@ body {
     left: 4px;
   }
 }
+
+/* @media screen and (max-width: 750px) {
+  .hide-mobile {
+    display: none;
+  }
+  .headshot {
+    width: 200px;
+    bottom: 95px;
+  }
+  .head {
+    height: 200px;
+  }
+  .mosthigh {
+    top: 145px;
+  }
+  .bodier {
+    margin-top: 195px;
+  }
+
+  .header-width {
+    width: 100%;
+  }
+  .introgroup {
+    width: 90%;
+    padding: 5px;
+    margin: auto;
+  }
+
+  .contact-group {
+    display: block;
+  }
+
+  .graph {
+    max-width: 95%;
+    margin: 20px auto;
+  }
+} */

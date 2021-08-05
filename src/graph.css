@@ -1,0 +1,78 @@
+
+h2 {
+  text-align: center;
+}
+
+.graph {
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+}
+
+.bar-text-content {
+  height: 100%;
+  width: 15%;
+}
+
+.text {
+  height: 16.666666667%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bar-lines-container {
+  height: 100%;
+  width: 85%;
+ 
+}
+
+.bar {
+  height: 15%;
+  margin-top: .8%;
+  margin-bottom: .8%;
+  background:  var(--light-blue);
+  border-radius: 5px 90px 5px 5px;
+  border-bottom: 1px solid #222;
+  border-right: 1px solid #222;
+}
+
+.bar:last-child {
+  border-bottom: none;
+}
+
+.markers > span {
+  position: absolute;
+  transform: translateX(-6px);
+  font-weight: 300;
+  font-size: 14.5px;
+}
+
+#vids {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#vids a:first-of-type {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  
+    .graph{
+      max-width: 95%;
+      margin: 20px auto;
+      }
+      .bar-lines-container {
+        height: 100%;
+        width: 75%;
+    }
+    .bar-text-content {
+        height: 100%;
+        width: 25%;
+    }
+
+  }
