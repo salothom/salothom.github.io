@@ -26,6 +26,7 @@
   --gray-dots: #e8e8ea;
   /** general **/
   --white: rgb(248, 248, 245);
+  width: 100%;
 }
 
 .toggle--checkbox:checked ~ .head {
@@ -39,16 +40,17 @@
   border: 2px solid var(--dark-darkestblue);
 }
 .toggle--checkbox:checked ~ .head .sun {
-display: none}
+  display: none;
+}
 .toggle--checkbox:checked ~ .head .moon {
-display: block}
-
+  display: block;
+}
 
 .toggle--checkbox:checked ~ .head .yellowSwap {
   background-color: var(--dark-darkestblue);
 }
 .toggle--checkbox:checked ~ .head .mainContent .sections .bar {
-  background: var(--dark-blue)
+  background: var(--dark-blue);
 }
 
 .toggle--checkbox:checked ~ .bodier .bar {
@@ -58,15 +60,13 @@ display: block}
 .toggle--checkbox:checked ~ .bodier {
   background-color: var(--dark-background);
 }
-.sun{
+.sun {
   display: block;
   transition: all 250ms ease-in;
-
 }
-.moon{
+.moon {
   display: none;
   transition: all 250ms ease-in;
-
 }
 .toggle--checkbox:checked
   ~ .head
@@ -115,14 +115,13 @@ display: block}
 .buttons:hover {
   text-decoration: underline;
 }
-.portolfio{
-  display:none;
-}
-.skills{
+.portolfio {
   display: none;
-
 }
-.about{
+.skills {
+  display: none;
+}
+.about {
   display: block;
 }
 
@@ -132,7 +131,6 @@ display: block}
   justify-content: center;
   margin-right: 15px;
   width: 100%;
-
 }
 
 .mosthigh {
@@ -158,7 +156,7 @@ h2 {
   width: 500px;
   z-index: 5;
   left: 100px;
-  top: 200px;
+  top: 130px;
   bottom: 30%;
   position: absolute;
 }
@@ -176,7 +174,9 @@ h2 {
   justify-content: center;
   display: flex;
 }
-
+h1{
+  padding-top:5px;
+}
 .head {
   transition: all 250ms ease-in;
   height: 100%;
@@ -438,39 +438,45 @@ body {
   }
 }
 
-/* @media screen and (max-width: 750px) {
-  .hide-mobile {
-    display: none;
+@media screen and (max-width: 990px) {
+  .facematch {
+    left: 30px;
   }
-  .headshot {
-    width: 200px;
-    bottom: 95px;
+  .mosthigh{
+    left: 140px;
   }
+}
+@media screen and (max-width: 766px) {
   .head {
-    height: 200px;
+    position: unset;
   }
-  .mosthigh {
-    top: 145px;
-  }
-  .bodier {
-    margin-top: 195px;
-  }
-
-  .header-width {
+  .facematch {
+    position: unset;
+    text-align: -webkit-center;
+    left: unset;
     width: 100%;
   }
-  .introgroup {
-    width: 90%;
-    padding: 5px;
-    margin: auto;
+  .headershot {
+    padding-top: 100px;
   }
-
   .contact-group {
-    display: block;
+    justify-content: center;
   }
+  .mainContent {
+    width: 100%;
+    margin-left: 0%;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    }
+  .rooter{
+    width:100%
+  }
+  .mosthigh{
+    top: 460px;
+    margin-left: 45%;
+    margin-right: 45%;
 
-  .graph {
-    max-width: 95%;
-    margin: 20px auto;
+    left:unset;
+    z-index: 6;;
   }
-} */
+}
