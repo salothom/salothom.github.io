@@ -39,65 +39,72 @@ function App() {
       <Toggle />
       <div className="head">
         <div className="headerTop yellowSwap"></div>
-        <div className="headershot">
-          <span className="facematch">
-            <img className="headshot sun" src={headshot} alt="headshot" />
-            <img className="headshot moon" src={headshotTwo} alt="headshot" />
+        <div className="facematch">
+          <img className="headshot sun" src={headshot} alt="headshot" />
+          <img className="headshot moon" src={headshotTwo} alt="headshot" />
 
-            <h1>Sarah Lois Thompson</h1>
-            <div className="contact-group">
-              <a target="_blank" href="https://github.com/salothom">
-                <img className="contact-links" src={github} alt="GitHub" />
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/sarahthompson3/"
-              >
-                <img className="contact-links" src={linkedin} alt="Linkedin" />
-              </a>
-              <a target="_blank" href="https://dev.to/salothom">
-                <img className="contact-links" src={devto} alt="Dev.To" />
-              </a>
-              <a
-                target="_blank"
-                href="https://open.spotify.com/user/1242326189?si=nvhZn5nAQHaD48_Rt6bvGg"
-              >
-                <img
-                  className="contact-links"
-                  src="https://storage.googleapis.com/pr-newsroom-wp/1/2021/02/Spotify_Icon_RGB_Black.png"
-                  alt="Spotify"
-                />
-              </a>
-            </div>
-          </span>
+          <h1>Sarah Lois Thompson</h1>
+          <div className="contact-group">
+            <a target="_blank" href="https://github.com/salothom">
+              <img className="contact-links" src={github} alt="GitHub" />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sarahthompson3/"
+            >
+              <img className="contact-links" src={linkedin} alt="Linkedin" />
+            </a>
+            <a target="_blank" href="https://dev.to/salothom">
+              <img className="contact-links" src={devto} alt="Dev.To" />
+            </a>
+            <a
+              target="_blank"
+              href="https://open.spotify.com/user/1242326189?si=nvhZn5nAQHaD48_Rt6bvGg"
+            >
+              <img
+                className="contact-links"
+                src="https://storage.googleapis.com/pr-newsroom-wp/1/2021/02/Spotify_Icon_RGB_Black.png"
+                alt="Spotify"
+              />
+            </a>
+          </div>
         </div>
         <div className="headerBottom yellowSwap"></div>
         <div className="mainContent">
           <div className="mainButtons">
-            <div
+            <button
+              tabindex="0"
+              onkeydown={(e) => {
+                console.log(e)
+                if (e.keyCode === 13) {
+                  handelShow("About");
+                }
+              }}
               onClick={() => {
                 handelShow("About");
               }}
               className="buttons"
             >
               About
-            </div>
-            <div
+            </button>
+            <button
+              tabindex="0"
               onClick={() => {
                 handelShow("Port");
               }}
               className="buttons"
             >
               Portfolio
-            </div>
-            <div
+            </button>
+            <button
+              tabindex="0"
               onClick={() => {
                 handelShow("Skills");
               }}
               className="buttons"
             >
               Skills
-            </div>
+            </button>
           </div>
           <div className=" sections">
             <div id="about" className="about ">
@@ -107,8 +114,12 @@ function App() {
               developers using Agile methologies, learning about web application
               secuirty processes, and creating accessible web applications.
             </div>
-            <div id="portolfio" className="portolfio "> Coming Soon!</div>
-            <div id="skills" className="skills "><MyGraph /> </div>
+            <div id="portolfio" className="portolfio ">
+              Coming Soon!
+            </div>
+            <div id="skills" className="skills ">
+              <MyGraph />
+            </div>
           </div>
         </div>
       </div>

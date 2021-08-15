@@ -5,7 +5,7 @@ export default function MyGraph() {
   const skills = {
     currencies: [
       {
-        currencyName: "JavaScript",
+        currencyName: "JS",
         marketCap: 80
       },
       {
@@ -32,12 +32,12 @@ export default function MyGraph() {
   };
 
   return (
-    <div>
+    <>
       <Graph
         currencies={skills.currencies}
         graphTitle="My Skills!!!!!"
       />
-    </div>
+    </>
   );
 }
 
@@ -60,8 +60,6 @@ class Graph extends React.Component {
 
   render() {
     return (
-      <div className="graph-wrapper">
-        {/* <h2> {this.props.graphTitle} </h2> */}
 
         <div className="graph">
           <BarTextContent currencies={this.props.currencies} />
@@ -74,7 +72,6 @@ class Graph extends React.Component {
           <div style={{ width: "12%" }} />
           {/* <Markers /> */}
         </div>
-      </div>
     );
   }
 }
