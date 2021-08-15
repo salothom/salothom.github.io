@@ -3,17 +3,17 @@
   "name": "Sarah Lois Thompson",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "./public/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo.png",
+      "src": "./public/logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "big_favicon.png",
+      "src": "./public/big_favicon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
