@@ -4,7 +4,6 @@ import headshotTwo from "./photos/darkmode.jpg";
 import github from "./photos/GitHub-Mark.png";
 import linkedin from "./photos/linkedin.png";
 import devto from "./photos/devto.png";
-import Hello from "./hello";
 import Toggle from "./toggle";
 import "./App.css";
 import React, { useState } from "react";
@@ -20,15 +19,15 @@ function App() {
   // };
 
   const handelShow = what => {
-    if (what == "Skills") {
+    if (what === "Skills") {
       document.getElementById("skills").style.display = "block";
       document.getElementById("about").style.display = "none";
       document.getElementById("portolfio").style.display = "none";
-    } else if (what == "Port") {
+    } else if (what === "Port") {
       document.getElementById("skills").style.display = "none";
       document.getElementById("about").style.display = "none";
       document.getElementById("portolfio").style.display = "block";
-    } else if (what == "About") {
+    } else if (what === "About") {
       document.getElementById("skills").style.display = "none";
       document.getElementById("about").style.display = "block";
       document.getElementById("portolfio").style.display = "none";

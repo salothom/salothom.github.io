@@ -52,10 +52,6 @@ class Graph extends React.Component {
   renderBars() {
     const { currencies } = this.props;
 
-    let sumOfAllCurrencies = currencies.reduce((acc, currency) => {
-      return acc + currency.marketCap;
-    }, 0);
-
     return currencies.map(currency => {
       const percent = currency.marketCap ;
       return <Bar percent={percent} key={currency.currencyName} />;
