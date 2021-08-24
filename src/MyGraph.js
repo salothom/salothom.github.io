@@ -1,48 +1,44 @@
 import React from "react";
-import './graph.css';
+import "./graph.css";
 
 export default function MyGraph() {
   const skills = {
-    currencies: [
+    catigory: [
       {
-        currencyName: "JS",
-        marketCap: 80
+        skillType: "JS",
+        percent: 80
       },
       {
-        currencyName: "html/css",
-        marketCap: 85
+        skillType: "html/css",
+        percent: 85
       },
       {
-        currencyName: "Angular",
-        marketCap: 70
+        skillType: "Angular",
+        percent: 70
       },
       {
-        currencyName: "React",
-        marketCap: 75
+        skillType: "React",
+        percent: 75
       },
       {
-        currencyName: "Agile",
-        marketCap: 85
+        skillType: "Agile",
+        percent: 85
       },
       {
-        currencyName: "Swift",
-        marketCap: 60
+        skillType: "Swift",
+        percent: 60
       }
     ]
   };
 
   return (
     <>
-      <Graph
-        currencies={skills.currencies}
-        graphTitle="My Skills!!!!!"
-      />
+      <Graph catigory={skills.catigory} graphTitle="My Skills!!!!!" />
     </>
   );
 }
 
 class Graph extends React.Component {
-
   renderLines() {
     return Array(10)
       .fill(null)
@@ -50,43 +46,40 @@ class Graph extends React.Component {
   }
 
   renderBars() {
-    const { currencies } = this.props;
+    const { catigory } = this.props;
 
-    return currencies.map(currency => {
-      const percent = currency.marketCap ;
-      return <Bar percent={percent} key={currency.currencyName} />;
+    return catigory.map(skillCat => {
+      const percent = skillCat.percent;
+      return <Bar percent={percent} key={skillCat.skillType} />;
     });
   }
 
   render() {
     return (
+      <div className="graph">
+        <BarTextContent catigory={this.props.catigory} />
 
-        <div className="graph">
-          <BarTextContent currencies={this.props.currencies} />
-
-          <div className="bar-lines-container">
-            {/* {this.renderLines()} */}
-            {this.renderBars()}
-          </div>
-
-          <div style={{ width: "12%" }} />
-          {/* <Markers /> */}
+        <div className="bar-lines-container">
+          {this.renderBars()}
         </div>
+
+        <div style={{ width: "12%" }} />
+      </div>
     );
   }
 }
-
-
 
 const Bar = ({ percent }) => {
   return <div className="bar" style={{ width: `${percent}%` }} />;
 };
 
-const BarTextContent = ({ currencies }) => {
+const BarTextContent = ({ catigory }) => {
   return (
     <div className="bar-text-content">
-      {currencies.map((currency,i) => (
-        <div key={i}className="text">{currency.currencyName}</div>
+      {catigory.map((skillCat, i) => (
+        <div key={i} className="text">
+          {skillCat.skillType}
+        </div>
       ))}
     </div>
   );

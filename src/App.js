@@ -74,8 +74,8 @@ function App() {
           <div className="mainButtons">
             <button
               tabindex="0"
-              onkeydown={(e) => {
-                console.log(e)
+              onkeydown={e => {
+                console.log(e);
                 if (e.keyCode === 13) {
                   handelShow("About");
                 }
@@ -130,8 +130,6 @@ function App() {
               bread, and listen to music. You'll sometimes find me captaining a
               city league kickball team, facilitating a local book club, or just
               kicking it by Barton Springs Creek. */}
-
-      {/* */}
     </>
   );
 }

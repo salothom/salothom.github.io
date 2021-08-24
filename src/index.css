@@ -328,7 +328,7 @@ body {
   height: 40px;
   background: var(--blue-color);
   border-radius: 50%;
-    border: 5px solid var(--light-yellow);
+  border: 5px solid var(--light-yellow);
   display: flex;
   transition: all 350ms ease-in;
 }
@@ -458,13 +458,11 @@ body {
   .buttons {
     background-color: var(--light-blue);
     border-radius: 15%;
-    color:inherit;
-
+    color: inherit;
   }
 
-  .about{
+  .about {
     padding: 15px;
-
   }
 
   .sections {
@@ -475,7 +473,7 @@ body {
 
   .toggle--checkbox:checked ~ .head .mainContent .mainButtons .buttons {
     background-color: var(--dark-darkestblue);
-    color:whitesmoke
+    color: whitesmoke;
   }
 
   .mainButtons {
