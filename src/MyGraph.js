@@ -6,7 +6,7 @@ export default function MyGraph() {
     catigory: [
       {
         skillType: "JS",
-        percent: 80
+        percent: 81
       },
       {
         skillType: "html/css",
