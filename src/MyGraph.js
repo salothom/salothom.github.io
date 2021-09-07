@@ -27,6 +27,9 @@ export default function MyGraph() {
       {
         skillType: "Swift",
         percent: 60
+      }, {
+        skillType: "git",
+        percent: 75
       }
     ]
   };
