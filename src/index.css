@@ -460,11 +460,9 @@ body {
     border-radius: 15%;
     color: inherit;
   }
-
   .about {
     padding: 15px;
   }
-
   .sections {
     display: block;
     margin-right: unset;
