@@ -66,7 +66,7 @@ class Graph extends React.Component {
           {this.renderBars()}
         </div>
 
-        <div style={{ width: "12%" }} />
+        {/* <div style={{ width: "12%" }} /> */}
       </div>
     );
   }
