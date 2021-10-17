@@ -70,7 +70,7 @@ function App() {
           </div>
         </div>
         <div className="headerBottom yellowSwap"></div>
-        <div className="mainContent">
+        {/* <div className="mainContent">
           <div className="mainButtons">
             <button
               tabindex="0"
@@ -120,8 +120,8 @@ function App() {
             <div id="skills" className="skills ">
               <MyGraph />
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </div>
 
       {/* I
