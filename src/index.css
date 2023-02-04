@@ -176,35 +176,20 @@ h1 {
 .head {
   transition: all 250ms ease-in;
   height: 100%;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   top: 0px;
   left: 0px;
   right: 0px;
-  background-color: var(--light-background);
+  /* background-color: var(--light-background); */
   color: black;
+  background: rgb(2,0,36);
+background: linear-gradient(176deg, rgba(2,0,36,1) 17%, rgba(9,9,121,1) 49%, rgba(99,177,218,1) 92%);
+
 }
 
 .yellowSwap {
   background-color: var(--light-yellow);
-}
-.headerTop {
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  height: 60px;
-  float: left;
-  align-items: center;
-  display: flex;
-}
-.headerBottom {
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  height: 60px;
-  float: left;
-  align-items: center;
-  display: flex;
 }
 
 .header-width {
@@ -278,128 +263,9 @@ body {
   position: relative;
 }
 
-.togglesize {
-  height: 15px;
-}
 
-.toggle--checkbox {
-  display: none;
-}
-.toggle--checkbox:checked {
-  /** This will all flip from sun to moon **/
-  /** Change the label color **/
-}
-.toggle--checkbox:checked ~ .background {
-  background: var(--indigo-background);
-}
 
-.toggle--checkbox:checked + .toggle--label {
-  background: var(--indigo-color);
-  border-color: var(--dark-darkestblue);
-  /** Change the cloud to stars **/
-  /** Change the sun into the moon **/
-  /** Show the dimples on the moon **/
-}
-.toggle--checkbox:checked .toggle--label-background {
-  left: 26px;
-  width: 5px;
-}
-.toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
-  width: 5px;
-  height: 5px;
-  top: -12px;
-}
-.toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
-  width: 5px;
-  height: 5px;
-  left: -17px;
-  top: 8px;
-}
-.toggle--checkbox:checked ~ .head .mainContent .mainButtons .buttons {
-  background-color: var(--dark-darkestblue);
-  color: whitesmoke;
-}
-.toggle--checkbox:checked + .toggle--label:before {
-  background: var(--white);
-  border-color: var(--gray-border);
-  animation-name: switch;
-  animation-duration: 350ms;
-  animation-fill-mode: forwards;
-}
-.toggle--checkbox:checked + .toggle--label:after {
-  transition-delay: 350ms;
-  opacity: 1;
-}
-.toggle--label {
-  width: 80px;
-  height: 40px;
-  background: var(--blue-color);
-  border-radius: 50%;
-  border: 5px solid var(--light-yellow);
-  display: flex;
-  transition: all 350ms ease-in;
-}
-.toggle--label-background {
-  width: 10px;
-  height: 5px;
-  border-radius: 5px;
-  position: relative;
-  background: var(--white);
-  left: 65px;
-  top: 20px;
-  transition: all 150ms ease-in;
-}
-.toggle--label-background:before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  width: 17px;
-  height: 5px;
-  border-radius: 5px;
-  background: var(--white);
-  left: -17px;
-  transition: all 150ms ease-in;
-}
-.toggle--label-background:after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  width: 17px;
-  height: 5px;
-  border-radius: 5px;
-  background: var(--white);
-  left: -10px;
-  transition: all 150ms ease-in;
-}
-.toggle--label:before {
-  animation-name: reverse;
-  animation-duration: 350ms;
-  animation-fill-mode: forwards;
-  transition: all 350ms ease-in;
-  content: "";
-  width: 30px;
-  height: 30px;
-  border: 5px solid var(--light-yellow);
-  top: 0px;
-  left: 4px;
-  position: absolute;
-  border-radius: 82px;
-  background: var(--yellow-background);
-}
-.toggle--label:after {
-  transition-delay: 0ms;
-  transition: all 250ms ease-in;
-  position: absolute;
-  content: "";
-  box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
-  left: 73px;
-  top: 11px;
-  width: 8px;
-  height: 8px;
-  background: transparent;
-  border-radius: 50%;
-  opacity: 0;
-}
+
 
 .my-name {
   padding: 7px;
@@ -410,7 +276,7 @@ body {
   font-variant: petite-caps;
 }
 
-@keyframes switch {
+/* @keyframes switch {
   0% {
     left: 0px;
   }
@@ -418,7 +284,7 @@ body {
     left: 20px;
     width: 50px;
   } */
-  100% {
+  /* 100% {
     left: 40px;
     width: 30px;
   }
@@ -427,76 +293,23 @@ body {
   0% {
     left: 24px;
     width: 42px;
-  }
+  } */
   /* 60% {
     left: 20px;
     width: 50px;
   } */
-  100% {
+  /* 100% {
     left: 0px;
   }
-}
+} */ 
 
-@media screen and (max-width: 990px) {
-  /* .facematch {
-    height: unset;  } */
-  /* .mosthigh {
-    left: 130px;
-    top: 500px;
-  } */
-}
+
 @media screen and (max-width: 766px) {
-  .head {
-    position: unset;
-  }
-  .facematch {
-    position: unset;
-    height: unset;
-    text-align: -webkit-center;
-    left: unset;
-    width: 100%;
-    padding-top: 80px;
-  }
- 
+
   .contact-group {
     justify-content: center;
     margin-top: 40px;
   }
-  .buttons {
-    background-color: var(--light-blue);
-    border-radius: 15%;
-    color: inherit;
-    box-shadow: none;
+ 
 
-  }
-  .about {
-    padding: 15px;
-  }
-  .sections {
-    display: block;
-    margin-right: unset;
-    width: 100%;
-  }
-
-  .toggle--checkbox:checked ~ .head .mainContent .mainButtons .buttons {
-    background-color: var(--dark-darkestblue);
-    color: whitesmoke;
-  }
-
-  .mainButtons {
-    flex-flow: unset;
-  }
-  .mainContent {
-    width: 100%;
-    height: 100vh;
-    margin-left: 0%;
-    margin-top: 40px;
-    display: block;
-  }
-  .rooter {
-    width: 100%;
-    height: 100%
-  }
-  .headshot {
-    width: 150px;}
 }

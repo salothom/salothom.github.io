@@ -1,0 +1,274 @@
+/* general styles */
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .night-sky {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  .star-box {
+    width: 320px;
+    height: 360px;
+    position: relative;
+    /* margin: 0 auto; */
+  }
+  
+  /* star styling */
+  
+  .star {
+    position: absolute;
+    box-shadow: 0 0 3px #fff;
+    border-radius: 50%;
+  }
+  
+  .twinkle-star-1 {
+    width: 5px;
+    height: 6px;
+    right: 16%;
+    top: 45%;
+    background: #b6c8ff;
+    -webkit-animation: twinkle 0.5s alternate infinite;
+            animation: twinkle 0.5s alternate infinite;
+    -webkit-animation-delay: 1.61404s;
+            animation-delay: 1.61404s;
+  }
+  
+  .twinkle-star-2 {
+    right: 32%;
+    top: 84.5%;
+    width: 4px;
+    height: 4px;
+    background: #f4ccbf;
+    -webkit-animation: twinkle 0.5s alternate infinite;
+            animation: twinkle 0.5s alternate infinite;
+    -webkit-animation-delay: 4.09091s;
+            animation-delay: 4.09091s;
+  }
+  
+  .twinkle-star-3 {
+    background: #f4ccbf;
+    width: 3px;
+    height: 3px;
+    left: 30%;
+    top: 97%;
+    -webkit-animation: twinkle 0.75s alternate infinite;
+            animation: twinkle 0.75s alternate infinite;
+    -webkit-animation-delay: 1.77143s;
+            animation-delay: 1.77143s;
+  }
+  
+  .twinkle-star-4 {
+    width: 5px;
+    height: 5px;
+    left: 53%;
+    top: 16.8%;
+    background: #b6c8ff;
+    -webkit-animation: twinkle 0.5s alternate infinite;
+            animation: twinkle 0.5s alternate infinite;
+    -webkit-animation-delay: 1.55357s;
+            animation-delay: 1.55357s;
+  }
+  
+  .twinkle-star-5 {
+    background: #f4aaaa;
+    width: 4px;
+    height: 4px;
+    left: 32%;
+    top: 40%;
+    -webkit-animation: twinkle 0.75s alternate infinite;
+            animation: twinkle 0.75s alternate infinite;
+    -webkit-animation-delay: 0.88462s;
+            animation-delay: 0.88462s;
+  }
+  
+  .twinkle-star-6 {
+    background: #f4aaaa;
+    width: 3px;
+    height: 3px;
+    left: 10%;
+    top: 48.5%;
+    -webkit-animation: twinkle 0.5s alternate infinite;
+            animation: twinkle 0.5s alternate infinite;
+    -webkit-animation-delay: 0.66s;
+            animation-delay: 0.66s;
+  }
+  
+  .twinkle-star-7 {
+    background: #b6c8f9;
+    width: 3px;
+    height: 3px;
+    left: 29%;
+    bottom: -4%;
+    -webkit-animation: twinkle 0.75s alternate infinite;
+            animation: twinkle 0.75s alternate infinite;
+    -webkit-animation-delay: 0.03279s;
+            animation-delay: 0.03279s;
+  }
+
+  .twinkle-star-8 {
+    background: #d5b6f9;
+    width: 3px;
+    height: 3px;
+    right: 29%;
+    top: 54%;
+    -webkit-animation: twinkle 0.55s alternate infinite;
+            animation: twinkle 0.55s alternate infinite;
+    -webkit-animation-delay: 0.02279s;
+            animation-delay: 0.02279s;
+  }
+  .twinkle-star-9 {
+    background: #a5b9ee;
+    width: 3px;
+    height: 3px;
+    left: 9%;
+    top: 14%;
+    -webkit-animation: twinkle 0.75s alternate infinite;
+            animation: twinkle 0.75s alternate infinite;
+    -webkit-animation-delay: 0.02279s;
+            animation-delay: 0.02279s;
+  }
+  .twinkle-star-10 {
+    background: #b6c8f9;
+    width: 3px;
+    height: 3px;
+    left: 49%;
+    top: -4%;
+    -webkit-animation: twinkle 0.85s alternate infinite;
+            animation: twinkle 0.85s alternate infinite;
+    -webkit-animation-delay: 0.05279s;
+            animation-delay: 0.05279s;
+  }
+  .twinkle-star-11 {
+    background: #cfa5bf;
+    width: 3px;
+    height: 3px;
+    right: 9%;
+    top: 8%;
+    -webkit-animation: twinkle 0.75s alternate infinite;
+            animation: twinkle 0.75s alternate infinite;
+    -webkit-animation-delay: 3.03279s;
+            animation-delay: 3.03279s;
+  }
+  .twinkle-star-11 {
+    background: #a5c6e0;
+    width: 3px;
+    height: 3px;
+    right: 35%;
+    bottom: 8%;
+    -webkit-animation: twinkle 0.55s alternate infinite;
+            animation: twinkle 0.55s alternate infinite;
+    -webkit-animation-delay: 2.04279s;
+            animation-delay: 2.04279s;
+  }
+  .twinkle-star-11 {
+    background: #a5c6e0;
+    width: 3px;
+    height: 3px;
+    right: 25%;
+    top: 68%;
+    -webkit-animation: twinkle 0.65s alternate infinite;
+            animation: twinkle 0.65s alternate infinite;
+    -webkit-animation-delay: 1.0379s;
+            animation-delay: 1.0379s;
+  }
+  /* line styling */
+  
+  .line {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    background: rgba(246,218,230,0.65);
+    -webkit-animation: line 7s alternate infinite;
+            animation: line 7s alternate infinite;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+  }
+  
+  .line-1 {
+    height: 215px;
+    transform: rotate(-10deg);
+    top: 21.5%;
+    left: 60.2%;
+  }
+  
+  .line-2 {
+    height: 105px;
+    transform: rotate(-42deg);
+    top: 17%;
+    left: 68.5%;
+  }
+  
+  .line-3 {
+    height: 119px;
+    transform: rotate(20deg);
+    top: 49%;
+    left: 75.5%;
+  }
+  
+  .line-4 {
+    height: 75px;
+    transform: rotate(-142deg);
+    top: 19%;
+    left: 43%;
+  }
+  
+  .line-5 {
+    height: 48px;
+    transform: rotate(69deg);
+    top: 38.2%;
+    left: 21.5%;
+  }
+  
+  .line-6 {
+    height: 101px;
+    transform: rotate(69deg);
+    top: 77.5%;
+    left: 48%;
+  }
+  
+  .line-7 {
+    height: 8px;
+    transform: rotate(9deg);
+    top: 99.5%;
+    left: 29.8%;
+  }
+  
+  /* the keyframes! */
+  
+  @keyframes twinkle {
+    0% {
+      opacity: .45;
+    }
+    100% {
+      opacity: .9;
+    }
+  }
+  
+  @keyframes line {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: .2;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
