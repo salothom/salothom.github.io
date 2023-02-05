@@ -1,5 +1,3 @@
-
-
 .App {
   text-align: center;
 }
@@ -30,11 +28,62 @@
   color: #61dafb;
 }
 
+.mainName {
+  text-align: center;
+  font-style: italic;
+  font-family: "Brush Script MT", cursive;
+  font-weight: lighter;
+  color: #dcd0da;
+  font-size: 90px;
+  position: absolute;
+  width: 100%;
+  padding-top: 250px;
+  /* animation: twinkle;
+  animation-duration: 6s;
+  /* animation-delay: 1s; */
+  /* animation-fill-mode: forwards;
+  transition-timing-function: ease-in; */
+  animation: twinkle 7s alternate infinite;
+  opacity: 0%;
+}
+
+.paragraph {
+  padding: 30px;
+  width: 70%;
+  margin: auto;
+  color: #dcd0da;
+  font-family: sans-serif;
+}
+.contact {
+  padding: 30px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+@media screen and (max-width: 830px) {
+  .mainName {
+    font-size: 125px;
+
+  }
+}@media screen and (max-width: 520px) {
+  .mainName {
+    font-size: 95px;
+
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes twinkle {
+  0% {
+    opacity: 3%;
+  }
+  100% {
+    opacity: 70%;
   }
 }
