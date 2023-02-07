@@ -12,7 +12,9 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+body {
+  font-size: 15px;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -61,14 +63,19 @@
   text-align: center;
 }
 @media screen and (max-width: 830px) {
+  body {
+    font-size: 25px;
+  }
   .mainName {
     font-size: 125px;
-
   }
-}@media screen and (max-width: 520px) {
+}
+@media screen and (max-width: 520px) {
+  body {
+    font-size: 25px;
+  }
   .mainName {
     font-size: 95px;
-
   }
 }
 @keyframes App-logo-spin {

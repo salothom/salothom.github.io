@@ -7,6 +7,7 @@ import devto from "./photos/devto.png";
 import "./App.css";
 import React, { useState } from "react";
 import LibraConstellation from "./librastar";
+import ArrowDown from './arrow'
 function App() {
   return (
     <>
@@ -15,12 +16,13 @@ function App() {
         <div className="">
           <h1 className={"mainName"}>Sarah Lois Thompson</h1>
           <LibraConstellation></LibraConstellation>
+          <ArrowDown></ArrowDown>
           <img className="headshot " src={headshotTwo} alt="headshot" />
         </div>
         <div className="paragraph">
           When I'm not coding, I like to do digital illistration, bake bread,
           and listen to music. You'll sometimes find me captaining a city league
-          kickball team, takinga pottery class, or just kicking it by Barton
+          kickball team, taking a pottery class, or just kicking it by Barton
           Springs.
         </div>
         <h2>Look</h2> 

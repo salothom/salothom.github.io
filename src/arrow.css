@@ -1,0 +1,28 @@
+.holder {
+  width: 100%;
+  text-align: center;
+  height: 200px;
+  position: absolute;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+  height: 119px;
+  width: 119px;
+}
+
+.down1 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: 60px;
+  position: absolute;
+}
+.down2 {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  top: 50px;
+  height: 119px;
+  width: 119px;}
