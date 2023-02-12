@@ -105,16 +105,13 @@ h2 {
 
 .headshot {
   border-radius: 50%;
-  width: 300px;
+  width: 250px;
   margin: auto;
   border: 2px solid var(--dark-darkestblue);
   border-radius: 50%;
 }
 
-/* h1 {
-  padding-top: 5px;
-  margin: auto;
-} */
+
 
 .head {
   transition: all 250ms ease-in;

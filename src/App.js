@@ -7,7 +7,7 @@ import devto from "./photos/devto.png";
 import "./App.css";
 import React, { useState } from "react";
 import LibraConstellation from "./librastar";
-import ArrowDown from './arrow'
+import ArrowDown from "./arrow";
 function App() {
   return (
     <>
@@ -16,8 +16,19 @@ function App() {
         <div className="">
           <h1 className={"mainName"}>Sarah Lois Thompson</h1>
           <LibraConstellation></LibraConstellation>
-          <ArrowDown></ArrowDown>
-          <img className="headshot " src={headshotTwo} alt="headshot" />
+          {/* <ArrowDown></ArrowDown> */}
+          <div className="paragraph">
+            <div>athenahealth</div>
+            <div>Senior Software Engineer</div> <div>Software Engineer</div>
+          </div>
+          <div className="paragraph">
+            <div>General Motors</div>
+            <div>Software Engineer</div>
+            <div> Quality Assurance Software Tester</div>
+          </div>
+          <div className="center">
+            <img className="headshot " src={headshotTwo} alt="headshot" />
+          </div>
         </div>
         <div className="paragraph">
           When I'm not coding, I like to do digital illistration, bake bread,
@@ -25,7 +36,7 @@ function App() {
           kickball team, taking a pottery class, or just kicking it by Barton
           Springs.
         </div>
-        <h2>Look</h2> 
+        {/* <h2>Look</h2> 
         <h2>Look</h2>
         <h2>Look</h2>
         <h2>Look</h2>
@@ -33,7 +44,7 @@ function App() {
         <h2>Look</h2>
         <h2>Look</h2>
         <h2>Look</h2>
-        <h2>Look</h2>
+        <h2>Look</h2> */}
         <div className="contact">
           <a target="_blank" href="https://github.com/salothom">
             <img className="contact-links" src={github} alt="GitHub" />

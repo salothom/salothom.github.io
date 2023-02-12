@@ -2,7 +2,7 @@
   width: 100%;
   text-align: center;
   height: 200px;
-  position: absolute;
+  /* position: absolute; */
 }
 .arrow {
   border: solid black;
